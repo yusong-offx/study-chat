@@ -29,7 +29,7 @@ window.onload = function () {
     };
 
     if (window["WebSocket"]) {
-        conn = new WebSocket("ws://localhost:3000/ws/".concat(Math.round(Math.random()*10000)));
+        conn = new WebSocket("ws://localhost:8080/ws/".concat(Math.round(Math.random()*10000)));
         conn.onclose = function (evt) {
             var item = document.createElement("div");
             item.innerHTML = "<b>Connection closed.</b>";
@@ -87,12 +87,12 @@ body {
 }
 
 </style>
-</head>
-<body>
-<div id="log"></div>
-<form id="form">
-    <input type="submit" value="Send" />
-    <input type="text" id="msg" size="64" autofocus />
-</form>
-</body>
+    </head>
+        <body>
+        <div id="log"></div>
+        <form id="form">
+            <input type="submit" value="Send" />
+            <input type="text" id="msg" size="64" autofocus />
+        </form>
+    </body>
 </html>

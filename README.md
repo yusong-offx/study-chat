@@ -3,10 +3,16 @@ Study fiber framework websocket middleware
 ### Make chat using fiber framework middleware websocket
 <br/>
 
+------
+
 How to use
 ---
 run main file (go run main.go)
 and open client.html
+
+<br/>
+
+----
 <br/>
 
 Usage
@@ -19,7 +25,7 @@ fiber websocket|https://github.com/gofiber/websocket
 
 Chat URL
 ---
-- take __http://localhost:3000/ws/:user_id__ and upgrade http to websocket
+- take __http://localhost:8080/ws/:user_id__ and upgrade http to websocket
 <br/>
 
 
@@ -27,7 +33,7 @@ Client.html
 ---
 - client.html make random socket connection url
 ```js
-    new WebSocket("ws://localhost:3000/ws/".concat(Math.round(Math.random()*10000)))
+    new WebSocket("ws://localhost:8080/ws/".concat(Math.round(Math.random()*10000)))
 ```
 - display 
 ```

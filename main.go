@@ -17,5 +17,5 @@ func main() {
 	// make websocket
 	app.Get("/ws/:user_id", websocket.New(chat.ChatApp))
 
-	log.Fatal(app.Listen(":3000"))
+	log.Fatal(app.Listen(":8080"))
 }
